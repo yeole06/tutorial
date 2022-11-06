@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //                JAVASCRIPT SCOPE
+        
+        //    it has two scope- 1) global scope
+        //                      2) local scope
+
+        var a=10;
+        function add(b){
+            return (a+b);
+        }
+        document.write(add(100));    
+                                         // o/p = 100
+    document.write("<hr>")
+
+    var i="i am a global variable"
+    function show(){
+        document.write(i+"<br>")
+        } 
+        show();                          // o/p = i am a global variable
+        document.write("<hr>")
+
+///////////////////////////////////////////////////////////////
+
+function add(d){
+    var c=10;      //      local variable          bcoz var is written here
+    return(c+d);
+}
+document.write(add(20));
+document.write("<hr>")
+
+function add(f){
+       e=10;      //      global variable          bcoz var is written here
+    return(e+f);
+}
+document.write(add(40));
+
+
+
+
+
+
+    </script>
+</body>
+</html>
